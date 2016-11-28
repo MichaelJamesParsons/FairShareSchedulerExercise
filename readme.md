@@ -6,6 +6,8 @@ This is an implementation of the fair share scheduler for the CSC 400 Fall 2016 
 
 This source code is a part of a university assignment and is to be used for academic purposes only. Students who have been assigned a similar task should not review this source code as it may be considered cheating at some institutions. The files `Sim.java`,  `Asm.java`, and all assets in the `/data` directory were provided as part of the assignment. I do not claim ownership of those files nor do they reflect the quality of my work.
 
+> The `Sim.java` file has been edited to implement my scheduler. All of my edits are marked with a `@todo`.
+
 ## Basic Usage
 
 ### Learn the API
