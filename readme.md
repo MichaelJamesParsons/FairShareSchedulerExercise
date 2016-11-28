@@ -2,25 +2,18 @@
 
 This is an implementation of the fair share scheduler for the CSC 400 Fall 2016 semester.
 
+## Disclaimer
+
+This source code is a part of a university assignment and is to be used for academic purposes only. Students who have been assigned a similar task should not review this source code as it may be considered cheating at some institutions. The files `Sim.java`,  `Asm.java`, and all assets in the `/data` directory were provided as part of the assignment. I do not claim ownership of those files nor do they reflect the quality of my work.
 
 ## Basic Usage
 
-### Step 1 Generate Mock Processes
-
-First, compile `Asm.java`. Then, in the same directory where the `asm.class` file is generated, execute `java Asm ***.pasm`, where "***" is the name of a `.pasm` file. This will have to be executed for each individual `.pasm` file.
-
-After you complete this step, you should have a list of `.pexe` files, where the name of each file will match the prefix of your `.pasm` files.
-
-For example `java asm comp.pasm` will create a `comp.pexe` file.
-
-### Step 2 Learn the API
-
-Once the `.pexe` files have been generated, compile this project.
+### Learn the API
 
 The fair share scheduler is executed through a commandline interface, which accepts 3 required arguments:
 
-- `-w` - The default weight of each process.
-- `-p` - The default priority of each process.
+- `-w` - The default weight of each process (decimal 0 < x < 1).
+- `-p` - The default priority of each process (int x > 0).
 - `-f` - A list of `.pexe` files (delimited by a space) to be executed, followed by their group ID. For example, if your file is `comp.pexe` with a group ID of `5`, your `-f` argument would look like this: `-f comp.pexe:5`.
 
 ### Execute the Scheduler (example)
