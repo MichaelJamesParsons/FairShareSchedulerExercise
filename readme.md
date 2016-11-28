@@ -23,3 +23,7 @@ The fair share scheduler is executed through a commandline interface, which acce
 This scheduler assumes your `.pexe` files are in the same directory at which you are executing the scheduler. If they are located elsewhere, you can simply prepend the relative path to the file in your arguments:
 
     java Sim -w .5 -p 60 -f ../some/other/location/comp.pexe:1
+    
+### That's It!
+
+Upon executing the scheduler, the script will print each action executed by the scheduler (start/stop/block process) in your console.
